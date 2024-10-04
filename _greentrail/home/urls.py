@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views # Imports the file called 'views' from the current directory.
 
-urlMappings = [
+urlpatterns = [
     path('homepage/', views.home, name='homepage'),
+     path('api/test', views.api_test),
 ]
